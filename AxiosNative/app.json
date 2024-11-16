@@ -1,0 +1,20 @@
+{
+   "name": "AxiosNative",  
+   "displayName": "Axios Native", 
+   "expo": {
+     "platforms": ["ios", "android", "web"],  
+     "ios": {
+       "bundleIdentifier": "com.yourname.axiosnative", 
+       "buildNumber": "1.0.0",  
+       "supportsTablet": true ,
+     "android": {
+       "package": "com.yourname.axiosnative",  
+       "versionCode": 1,  
+       "permissions": ["INTERNET", "ACCESS_NETWORK_STATE"]  
+     },
+     "web": {
+    
+     }
+   }
+ }
+ 

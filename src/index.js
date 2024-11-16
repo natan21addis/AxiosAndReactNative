@@ -1,18 +1,17 @@
-import { AppRegistry } from 'react-native';
-import App from './App'; // Your main App component
-import { name as appName } from '../App.json';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// Import the necessary libraries for web support
-import { Platform } from 'react-native';
-import * as ReactNativeWeb from 'react-native-web';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-// Register the app for the native platforms
-AppRegistry.registerComponent(appName, () => App);
-
-// This registers the app to work on the web as well
-if (Platform.OS === 'web') {
-  AppRegistry.runApplication(appName, {
-    initialProps: {},
-    rootTag: document.getElementById('app-root'),
-  });
-}
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

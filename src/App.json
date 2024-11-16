@@ -1,8 +1,0 @@
-{
-   "name": "AxiosNative",
-   "displayName": "AxiosNative",
-   "expo": {
-     "platforms": ["ios", "android","web"]
-   }
- }
- 
